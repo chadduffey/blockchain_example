@@ -74,3 +74,25 @@ class BlockChain(object):
 	def last_block(self):
 		return self.chain[-1]
 
+
+#sample of hash mining
+"""
+Let’s decide that the hash of some integer x multiplied by another y must end in 0. 
+So, hash(x * y) = ac23dc...0. 
+And for this simplified example, let’s fix x = 5. 
+Implementing this in Python -->
+"""
+
+x = 5
+y = 0
+
+attempt = hashlib.sha256(f'{x*y}'.encode()).hexdigest()[-1]
+while attempt != "0":
+	y += 1
+	print("mining - [{}] [{}]".format(y, attempt))
+	attempt = hashlib.sha256(f'{x*y}'.encode()).hexdigest()[-1]
+
+print(f'The solution is: {y} - {attempt}')
+
+
+
