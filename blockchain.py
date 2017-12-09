@@ -93,6 +93,8 @@ while attempt != "0":
 	attempt = hashlib.sha256(f'{x*y}'.encode()).hexdigest()[-1]
 
 print(f'The solution is: {y} - {attempt}')
+mined = BlockChain.hash(y * x)
+print(f'Hash: {mined}')
 
 
 
