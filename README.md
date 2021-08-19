@@ -6,6 +6,7 @@ https://hackernoon.com/learn-blockchains-by-building-one-117428612f46
 https://github.com/dvf/blockchain
 
 # simple example
+```
 (venv) chad@ubuntu:~/code/blockchain_example$ python blockchain.py 
 mining - [1] [9]
 mining - [2] [d]
@@ -30,4 +31,5 @@ mining - [20] [8]
 mining - [21] [6]
 The solution is: 21 - 0
 Hash: 1253e9373e781b7500266caa55150e08e210bc8cd8cc70d89985e3600155e860
+```
 
